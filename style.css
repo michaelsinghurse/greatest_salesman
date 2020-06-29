@@ -4,14 +4,14 @@
 }
 
 body {
-  padding: 5px;
   background-color: black;
 }
 
 header, main {
-  width: 900px;
+  /*width: 900px;*/
+  width: 100%;
   margin: 0 auto;
-  padding: 5px;
+  padding: 8px;
   box-sizing: border-box;
   background-color: white;
 }
@@ -21,6 +21,10 @@ header h1, header p {
 }
 
 header h1 {
+  margin: 15px 0;
+}
+
+header h2 {
   margin: 15px 0;
 }
 
@@ -58,4 +62,10 @@ a {
 
 a:visited {
   color: blue;
+}
+
+@media screen and (min-width: 961px) {
+  header, main {
+    width: 961px;
+  }
 }
